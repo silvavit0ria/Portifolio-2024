@@ -1,0 +1,339 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 2rem;
+  background-color: rgb(0, 0, 0);
+}
+
+header .nav-bar {
+  background-color: #0b9af9;
+}
+header .nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+}
+header .nav-bar ul li {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+header .nav-bar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.625);
+  font-family: "IBM Plex Mono", monospace;
+}
+header a:hover {
+  border-bottom: solid #f2e9e9;
+}
+
+.intro-main {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+  align-items: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+.intro-main .descricao-intro {
+  width: 30vw;
+}
+.intro-main .descricao-intro h1 {
+  font-size: 3rem;
+}
+.intro-main .descricao-intro p {
+  font-size: 1.2rem;
+}
+.intro-main .descricao-intro button {
+  padding: 1rem;
+  color: white;
+}
+.intro-main .intro-imagem {
+  background-color: #0b9af9;
+  border-radius: 100%;
+}
+.intro-main img {
+  width: 20vw;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #0b9af9;
+  border: 0;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.463);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.projetos-main {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.projetos-main .item-projeto {
+  background-color: #ffffff;
+  width: 25vw;
+  height: auto;
+  display: inline-block;
+}
+.projetos-main .item-projeto img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.projetos-main .item-projeto div {
+  font-family: "IBM Plex Mono", monospace;
+}
+.projetos-main .item-projeto div h2 {
+  font-weight: 400;
+  margin: 0.5rem;
+  text-align: center;
+  border-bottom: solid #0b9af9;
+}
+.projetos-main .item-projeto div p {
+  padding: 0.8rem;
+  border-bottom: solid rgba(202, 201, 201, 0.784);
+  font-size: 0.8rem;
+}
+.projetos-main .item-projeto .item-icone {
+  padding: 0.5rem;
+  display: flex;
+}
+.projetos-main .item-projeto #icone {
+  width: 1.8rem;
+  height: auto;
+  color: aqua;
+}
+.projetos-main .item-projeto h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem;
+}
+
+.sobre-main {
+  color: #ffffff;
+  padding: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  justify-content: space-around;
+}
+.sobre-main p {
+  padding: 2rem;
+}
+.sobre-main h2 {
+  color: #0b9af9;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.sobre-main .descricao-sobre {
+  width: 50vw;
+  font-size: 0.8rem;
+}
+.sobre-main img {
+  width: 30vw;
+  border-radius: 10px;
+}
+
+.sobre-main2 {
+  color: #ffffff;
+  padding: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  justify-content: space-around;
+}
+.sobre-main2 p {
+  padding: 2rem;
+}
+.sobre-main2 h2 {
+  color: #0b9af9;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.sobre-main2 .descricao-sobre {
+  width: 50vw;
+  font-size: 0.8rem;
+}
+.sobre-main2 img {
+  width: 30vw;
+  border-radius: 10px;
+}
+
+.contato-main {
+  background-color: #0b9af9;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.871);
+  font-family: "IBM Plex Mono", monospace;
+}
+.contato-main h6 {
+  font-size: 1.2rem;
+}
+
+footer {
+  color: white;
+  background-color: #0b9af9;
+  text-align: center;
+}
+footer .footer-redes {
+  border-bottom: solid rgba(255, 255, 255, 0.412);
+}
+footer .footer-redes img {
+  padding: 0.8rem;
+  cursor: pointer;
+  width: 6vw;
+}
+
+.botao-body {
+  position: fixed;
+  bottom: 0;
+  right: 0.5rem;
+  background-color: transparent;
+  border: solid white;
+  border-radius: 100%;
+  width: 3vw;
+}
+
+.botao-body:hover {
+  background-color: #0b9af9;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .botao-body {
+    display: none;
+  }
+  body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+  }
+  .intro-main {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .intro-main .descricao-intro {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+  .intro-main .descricao-intro h1 {
+    font-size: 1.8rem;
+  }
+  .intro-main .descricao-intro p {
+    font-size: 1rem;
+  }
+  #intro-imagem {
+    background-color: #0b9af9;
+    width: 50vw;
+  }
+  .nav-bar ul {
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+  }
+  .projetos-main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .projetos-main .item-projeto {
+    width: 100%;
+  }
+  .sobre-main2 {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+  .sobre-main2 img {
+    padding: 1rem;
+    width: 100%;
+  }
+  .sobre-main2 .descricao-sobre {
+    width: 100%;
+    background-color: rgba(11, 154, 249, 0.2235294118);
+    border-radius: 10px;
+  }
+  .sobre-main2 .descricao-sobre p {
+    padding: 0.5rem;
+  }
+  .sobre-main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .sobre-main img {
+    padding: 1rem;
+    width: 100%;
+  }
+  .sobre-main .descricao-sobre {
+    width: 100%;
+    background-color: rgba(11, 154, 249, 0.2235294118);
+    border-radius: 10px;
+  }
+  .sobre-main .descricao-sobre p {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 878px) {
+  .intro-main {
+    padding: 2rem;
+    align-items: center;
+  }
+  .intro-main .intro-imagem {
+    background-color: #0b9af9;
+    width: 20vw;
+  }
+  .intro-main .intro-imagem img {
+    width: 100%;
+  }
+  .sobre-main2 {
+    padding: 2rem;
+    align-items: center;
+  }
+  .sobre-main {
+    padding: 2rem;
+    align-items: center;
+  }
+  .projetos-main {
+    padding: 0.5rem;
+  }
+  .projetos-main .item-projeto {
+    width: 100%;
+  }
+}
+@media (max-width: 658px) {
+  .sobre-main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .sobre-main img {
+    padding: 1rem;
+    width: 100%;
+  }
+  .sobre-main .descricao-sobre {
+    width: 100%;
+    background-color: rgba(11, 154, 249, 0.2235294118);
+    border-radius: 10px;
+  }
+  .sobre-main2 {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+  .sobre-main2 img {
+    padding: 1rem;
+    width: 100%;
+  }
+  .sobre-main2 .descricao-sobre {
+    width: 100%;
+    background-color: rgba(11, 154, 249, 0.2235294118);
+    border-radius: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
